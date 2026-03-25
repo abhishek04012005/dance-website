@@ -40,6 +40,7 @@ export default function Home() {
         onClose={() => setIsModalOpen(false)} 
       />
       <Footer footer={data.footer} studio={data.studio} />
+      {/* dfs */}
     </>
   );
 }
