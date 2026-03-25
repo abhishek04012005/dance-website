@@ -1,0 +1,137 @@
+{
+  "studio": "Rhythmique Dance Studio",
+  "tagline": "Where movement becomes art",
+  "about": {    "sectionLabel": "Our Story",    "headline": "Born from a love of movement",
+    "text": [
+      "Rhythmique Dance Studio was founded with a singular vision: to create a space where dancers of all levels could discover the transformative power of movement.",
+      "From our first tiny studio to today’s world-class facility, our passion has never wavered."
+    ],    "badge": {
+      "value": "15+",
+      "label": "Years of Dance"
+    },
+    "images": {
+      "main": "https://images.unsplash.com/photo-1518834107812-67b0b7c58434?w=700&q=80",
+      "accent": "https://images.unsplash.com/photo-1547153760-18fc86324498?w=500&q=80"
+    },    "stats": [
+      { "label": "Students trained", "value": "2,400+" },
+      { "label": "Expert instructors", "value": "32" },
+      { "label": "Dance styles", "value": "18" }
+    ]
+  },
+  "classesSection": {
+    "label": "What We Offer",
+    "headline": "Our dance classes",
+    "description": "Our diverse collection of dance classes caters to every passion and skill level. From classical elegance to urban beats, discover your rhythm.",
+    "subtitle": "From beginner to professional, find your perfect style and level.",
+    "featured": "Ballet",
+    "stats": [
+      { "value": "18+", "label": "Dance Styles" },
+      { "value": "32", "label": "Expert Instructors" },
+      { "value": "2,400+", "label": "Students" }
+    ]
+  },
+  "gallerySection": {
+    "label": "Our Moments",
+    "headline": "Studio gallery",
+    "description": "Capture the magic of movement. Explore our vibrant community in action, showcasing the grace, energy, and transformative power of dance.",
+    "subtitle": "Celebrating every step, every leap, every triumph",
+    "categories": ["All", "Classes", "Events", "Performances", "Community"],
+    "stats": [
+      { "value": "500+", "label": "Photos" },
+      { "value": "32", "label": "Events" },
+      { "value": "2,400+", "label": "Memories" }
+    ]
+  },
+  "classes": [
+    {"title":"Ballet","level":"All Levels","description":"Develop grace, posture, and technical precision.","image":"https://images.unsplash.com/photo-1518834107812-67b0b7c58434?w=900&q=80","pill":"pill-ballet","instructor":"Sofia Reyes","duration":"60 mins","students":"24"},
+    {"title":"Contemporary","level":"Intermediate+","description":"Explore freedom of movement and emotional expression.","image":"https://images.unsplash.com/photo-1504609813442-a8924e83f76e?w=900&q=80","pill":"pill-contemporary","instructor":"Marcus Chen","duration":"60 mins","students":"18"},
+    {"title":"Hip-Hop","level":"Beginner+","description":"Master grooves, power moves, and street style.","image":"https://images.unsplash.com/photo-1508700929628-666bc8bd84ea?w=900&q=80","pill":"pill-hip-hop","instructor":"Marcus Chen","duration":"75 mins","students":"32"},
+    {"title":"Latin Salsa","level":"All Levels","description":"Feel the fire of Latin passion with salsa and bachata.","image":"https://images.unsplash.com/photo-1535525153412-5a42439a210d?w=900&q=80","pill":"pill-salsa","instructor":"Carlos Mendez","duration":"60 mins","students":"20"},
+    {"title":"Jazz","level":"All Levels","description":"High-energy choreography with theatrical flair.","image":"https://images.unsplash.com/photo-1547153760-18fc86324498?w=900&q=80","pill":"pill-jazz","instructor":"Sofia Reyes","duration":"90 mins","students":"28"}
+  ],
+  "team": [
+    {"name":"Sofia Reyes","role":"Ballet & Contemporary","image":"https://images.unsplash.com/photo-1518834107812-67b0b7c58434?w=400&q=80"},
+    {"name":"Marcus Chen","role":"Hip-Hop & Jazz","image":"https://images.unsplash.com/photo-1504609813442-a8924e83f76e?w=400&q=80"},
+    {"name":"Priya Sharma","role":"Kathak & Fusion","image":"https://images.unsplash.com/photo-1547153760-18fc86324498?w=400&q=80"},
+    {"name":"Carlos Mendez","role":"Latin & Salsa","image":"https://images.unsplash.com/photo-1535525153412-5a42439a210d?w=400&q=80"}
+  ],
+  "scheduleSection": {
+    "label": "Plan Your Week",
+    "headline": "Class schedule",
+    "description": "Explore our diverse class offerings throughout the week. Find the perfect time slot that fits your lifestyle and dance goals.",
+    "tagline": "Available 6 days a week • Morning, Afternoon & Evening slots",
+    "stats": [
+      { "value": "32+", "label": "Classes per week" },
+      { "value": "18", "label": "Dance styles" },
+      { "value": "6am–9pm", "label": "Operating hours" }
+    ]
+  },
+  "schedule": {
+    "mon": [
+      {"time":"7:00 AM","class":"Ballet","instructor":"Sofia Reyes","level":"Beginner","color":"#e74c3c"},
+      {"time":"9:00 AM","class":"Contemporary","instructor":"Marcus Chen","level":"Intermediate","color":"#3498db"},
+      {"time":"6:00 PM","class":"Hip-Hop","instructor":"Marcus Chen","level":"Beginner+","color":"#f39c12"}
+    ],
+    "tue": [
+      {"time":"8:00 AM","class":"Contemporary","instructor":"Marcus Chen","level":"Intermediate","color":"#3498db"},
+      {"time":"10:00 AM","class":"Kathak","instructor":"Priya Sharma","level":"All Levels","color":"#9b59b6"},
+      {"time":"7:00 PM","class":"Latin Salsa","instructor":"Carlos Mendez","level":"All Levels","color":"#e91e63"}
+    ],
+    "wed": [
+      {"time":"7:00 AM","class":"Ballet","instructor":"Sofia Reyes","level":"Beginner","color":"#e74c3c"},
+      {"time":"11:00 AM","class":"Jazz","instructor":"Sofia Reyes","level":"All Levels","color":"#f1c40f"},
+      {"time":"6:30 PM","class":"Contemporary","instructor":"Marcus Chen","level":"Advanced","color":"#3498db"}
+    ],
+    "thu": [
+      {"time":"8:00 AM","class":"Hip-Hop","instructor":"Marcus Chen","level":"Beginner+","color":"#f39c12"},
+      {"time":"10:30 AM","class":"Latin Salsa","instructor":"Carlos Mendez","level":"All Levels","color":"#e91e63"},
+      {"time":"7:00 PM","class":"Kathak","instructor":"Priya Sharma","level":"Intermediate","color":"#9b59b6"}
+    ],
+    "fri": [
+      {"time":"7:00 AM","class":"Ballet","instructor":"Sofia Reyes","level":"Beginner","color":"#e74c3c"},
+      {"time":"10:00 AM","class":"Jazz","instructor":"Sofia Reyes","level":"All Levels","color":"#f1c40f"},
+      {"time":"6:00 PM","class":"Contemporary","instructor":"Marcus Chen","level":"Advanced","color":"#3498db"}
+    ],
+    "sat": [
+      {"time":"9:00 AM","class":"Hip-Hop","instructor":"Marcus Chen","level":"Beginner+","color":"#f39c12"},
+      {"time":"11:00 AM","class":"Latin Salsa","instructor":"Carlos Mendez","level":"All Levels","color":"#e91e63"},
+      {"time":"2:00 PM","class":"Ballet","instructor":"Sofia Reyes","level":"Beginner","color":"#e74c3c"},
+      {"time":"4:00 PM","class":"Kathak","instructor":"Priya Sharma","level":"All Levels","color":"#9b59b6"},
+      {"time":"6:30 PM","class":"Jazz","instructor":"Sofia Reyes","level":"Intermediate","color":"#f1c40f"}
+    ]
+  },
+  "cta": {
+    "headline": "Ready to dance?",
+    "subheading": "Your first class is free. No experience needed — just a willingness to move, express, and grow. Join our vibrant community today.",
+    "primaryBtn": "Book Free Trial",
+    "secondaryBtn": "View All Packages"
+  },
+  "footer": {
+    "motto": "Where movement meets artistry. Transforming lives through the joy of dance since 2010.",
+    "contact": {
+      "address": "📍 Raipur, CG",
+      "phone": "📞 +91 98765 43210",
+      "email": "✉ hello@rhythmique.in",
+      "hours": "Mon–Sat: 7am–9pm"
+    },
+    "links": {
+      "classes": ["Ballet", "Contemporary", "Hip-Hop", "Latin Salsa", "Kathak"],
+      "studio": ["About Us", "Our Team", "Gallery", "Events", "Blog"],
+      "social": [
+        {"name": "Facebook", "icon": "f"},
+        {"name": "LinkedIn", "icon": "in"},
+        {"name": "YouTube", "icon": "▶"},
+        {"name": "Instagram", "icon": "◉"}
+      ]
+    },
+    "copyright": "© 2026 Rhythmique Dance Studio. All rights reserved.",
+    "credit": "Crafted with ♥ for dancers everywhere"
+  },
+  "enquiry": {
+    "title": "Get In Touch",
+    "subtitle": "Have questions? We'd love to hear from you!",
+    "fields": ["Name", "Email", "Phone", "Message"],
+    "submitBtn": "Send Enquiry",
+    "successMsg": "Thank you for your enquiry! We'll get back to you soon."
+  }
+}

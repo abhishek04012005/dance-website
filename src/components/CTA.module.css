@@ -1,0 +1,12 @@
+.ctaSection { text-align: center; padding: 6rem 2rem; background: url('https://images.unsplash.com/photo-1547153760-18fc86324498?w=1600&q=80') center/cover no-repeat; position: relative; }
+.ctaSection::before { content: ''; position: absolute; inset: 0; background: rgba(10, 6, 8, 0.8); }
+.inner { position: relative; z-index: 1; max-width: 700px; margin: 0 auto; }
+.label { font-size: 0.75rem; letter-spacing: 0.4em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.8rem; }
+.title { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 5vw, 3.5rem); color: #f5ede0; margin-bottom: 1rem; }
+.subtitle { color: rgba(217, 200, 184, 0.85); font-size: 1rem; line-height: 1.7; margin-bottom: 2rem; }
+.actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+.primary { background: var(--gold); color: #0a0608; border: none; padding: 0.85rem 2rem; border-radius: 3px; font-size: 0.85rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; transition: background 0.3s; }
+.primary:hover { background: var(--gold-light); }
+.ghost { border: 1px solid rgba(245, 237, 224, 0.4); color: #f5ede0; padding: 0.8rem 1.8rem; border-radius: 3px; font-size: 0.85rem; text-decoration: none; transition: border-color 0.3s; display: inline-block; }
+.ghost:hover { border-color: #f5ede0; }
+@media (max-width: 768px) { .ctaSection { padding: 4rem 1.5rem; } .title { font-size: 2rem; } }

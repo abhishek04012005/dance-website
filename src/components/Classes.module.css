@@ -1,0 +1,61 @@
+.section { padding: 4rem 1.5rem; background: #0f0b0f; }
+
+.head { text-align: center; max-width: 900px; margin: 0 auto 4rem; }
+
+/* Header Section Decorations */
+.label { color: #d4af6a; letter-spacing: 0.4em; font-size: 0.75rem; margin-bottom: 0.8rem; text-transform: uppercase; display: block; }
+
+.decorTop { display: flex; justify-content: center; gap: 1rem; margin-bottom: 1.5rem; }
+.dot { width: 8px; height: 8px; background: #d4af6a; border-radius: 50%; animation: pulse 2s ease-in-out infinite; }
+.dot:nth-child(2) { animation-delay: 0.3s; }
+.dot:nth-child(3) { animation-delay: 0.6s; }
+@keyframes pulse { 0%, 100% { opacity: 0.6; transform: scale(1); } 50% { opacity: 1; transform: scale(1.2); } }
+
+.title { font-family: 'Playfair Display', serif; color: #f5ede0; font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom: 0.75rem; text-align: center; }
+.titleWord { display: inline-block; animation: slideUp 0.8s cubic-bezier(0.34, 1.56, 0.64, 1); }
+@keyframes slideUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+
+.description { color: rgba(217,200,184,0.8); font-size: 1rem; text-align: center; max-width: 600px; margin: 0 auto 2rem; line-height: 1.6; }
+
+.statsRow { display: flex; justify-content: center; gap: 3rem; margin: 2rem 0; flex-wrap: wrap; }
+.statItem { text-align: center; animation: fadeInUp 0.8s ease 0.2s both; }
+.statValue { color: #d4af6a; font-size: 1.8rem; margin-bottom: 0.3rem; font-weight: 700; }
+.statLabel { color: rgba(217,200,184,0.7); font-size: 0.9rem; }
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+.separator { width: 60px; height: 2px; background: linear-gradient(90deg, transparent, #d4af6a, transparent); margin: 2rem auto; }
+
+.featured { background: linear-gradient(135deg, rgba(212,175,106,0.1) 0%, rgba(196,94,122,0.05) 100%); border: 1px solid rgba(212,175,106,0.2); border-radius: 12px; overflow: hidden; margin-top: 2rem; animation: fadeInUp 0.8s ease 0.4s both; }
+.featuredLabel { text-align: center; color: #d4af6a; font-size: 0.85rem; font-weight: 600; padding: 1rem 0 0.5rem; margin: 0; letter-spacing: 0.05em; }
+.featuredCard { display: grid; grid-template-columns: 250px 1fr; gap: 2rem; align-items: center; padding: 2rem; }
+.featuredImage { width: 100%; height: 200px; border-radius: 8px; overflow: hidden; }
+.featuredImage img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
+.featured:hover .featuredImage img { transform: scale(1.05); }
+.featuredInfo h3 { color: #f5ede0; font-size: 1.5rem; margin: 0 0 0.8rem; font-family: 'Playfair Display', serif; }
+.featuredInfo p { color: rgba(217,200,184,0.75); font-size: 0.95rem; line-height: 1.6; margin: 0 0 1.2rem; }
+.learnMore { display: inline-block; color: #d4af6a; text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: all 0.3s ease; border-bottom: 2px solid #d4af6a; padding-bottom: 0.2rem; }
+.learnMore:hover { color: #f5ede0; border-bottom-color: #f5ede0; }
+
+.subtitle { color: rgba(217,200,184,0.85); margin-bottom: 2rem; font-size: 0.95rem; }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+.card { border-radius: 8px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.3); background: #171217; transition: all 0.4s cubic-bezier(0.25,0.46,0.45,0.94); transform: translateY(0); }
+.card:hover { transform: translateY(-8px); box-shadow: 0 20px 50px rgba(212,175,106,0.15); }
+.imageWrapper { position: relative; width: 100%; overflow: hidden; height: 280px; }
+.imageWrapper img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+.card:hover .imageWrapper img { transform: scale(1.1); }
+.overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(212,175,106,0.9) 0%, rgba(196,94,122,0.85) 100%); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.4s ease; }
+.card:hover .overlay { opacity: 1; }
+.overlayContent { text-align: center; color: #0a0608; animation: slideIn 0.4s ease; }
+@keyframes slideIn { from { transform: translateY(20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+.instructor { font-size: 0.9rem; font-weight: 600; margin-bottom: 0.4rem; }
+.duration { font-size: 0.85rem; margin-bottom: 0.4rem; }
+.students { font-size: 0.85rem; margin-bottom: 1rem; }
+.enrollBtn { background: #0a0608; color: var(--gold); border: none; padding: 0.6rem 1.4rem; border-radius: 4px; font-size: 0.8rem; font-weight: 600; cursor: pointer; text-decoration: none; transition: background 0.3s; display: inline-block; }
+.enrollBtn:hover { background: rgba(10,6,8,0.8); }
+.info { padding: 1.3rem; }
+.header { display: flex; justify-content: space-between; align-items: start; gap: 0.8rem; margin-bottom: 0.8rem; }
+.cardH3 { font-size: 1.3rem; color: #f5ede0; margin: 0; }
+.levelBadge { display: inline-block; background: rgba(212,175,106,0.15); color: var(--gold); padding: 0.3rem 0.7rem; border-radius: 16px; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600; white-space: nowrap; }
+.tag { color: rgba(217,200,184,0.84); line-height: 1.6; font-size: 0.9rem; margin: 0; }
+@media (max-width: 1024px) { .grid { grid-template-columns: repeat(2, 1fr); } .featuredCard { grid-template-columns: 200px 1fr; gap: 1.5rem; padding: 1.5rem; } .featuredImage { height: 180px; } }
+@media (max-width: 768px) { .section { padding: 3rem 1rem; } .grid { grid-template-columns: 1fr; gap: 1rem; } .imageWrapper { height: 220px; } .statsRow { gap: 1.5rem; } .statItem strong { font-size: 1.5rem; } .featuredCard { grid-template-columns: 1fr; gap: 1rem; padding: 1.5rem; } .featuredImage { height: 200px; } .featuredInfo h3 { font-size: 1.3rem; } }

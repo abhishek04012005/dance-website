@@ -1,0 +1,13 @@
+.section { padding: 4rem 1.5rem; background: #0f0b0f; }
+.head { text-align: center; margin-bottom: 2rem; }
+.label { color: #d4af6a; letter-spacing: 0.4em; font-size: 0.75rem; }
+.title { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 5vw, 3rem); margin-top: 0.4rem; color: #f5ede0; }
+.grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+.card { text-align: center; padding: 1rem; border-radius: 6px; background: #171217; }
+.imageWrap { position: relative; padding-bottom: 130%; overflow: hidden; border-radius: 6px; margin-bottom: 0.8rem; }
+.imageWrap img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; }
+.card:hover .imageWrap img { transform: scale(1.05); }
+.cardH3 { font-size: 1rem; }
+.cardP { color: rgba(212,175,106,0.95); font-size: 0.75rem; letter-spacing: 0.06em; }
+@media (max-width: 1024px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 768px) { .grid { grid-template-columns: 1fr; } }

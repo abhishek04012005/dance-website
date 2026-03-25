@@ -1,0 +1,264 @@
+.section { padding: 4rem 1.5rem; background: #0f0b0f; }
+
+.head { text-align: center; max-width: 900px; margin: 0 auto 3rem; }
+
+/* Header Decorations */
+.decorTop { display: flex; justify-content: center; gap: 1rem; margin-bottom: 1.5rem; }
+.dot { width: 8px; height: 8px; background: #d4af6a; border-radius: 50%; animation: pulse 2s ease-in-out infinite; }
+.dot:nth-child(2) { animation-delay: 0.3s; }
+.dot:nth-child(3) { animation-delay: 0.6s; }
+@keyframes pulse { 0%, 100% { opacity: 0.6; transform: scale(1); } 50% { opacity: 1; transform: scale(1.2); } }
+
+.label { color: #d4af6a; letter-spacing: 0.4em; font-size: 0.75rem; margin-bottom: 0.8rem; text-transform: uppercase; display: block; }
+
+.title { font-family: 'Playfair Display', serif; color: #f5ede0; font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom: 0.75rem; }
+.titleWord { display: inline-block; animation: slideUp 0.8s cubic-bezier(0.34, 1.56, 0.64, 1); }
+@keyframes slideUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+
+.description { color: rgba(217,200,184,0.8); font-size: 1rem; margin: 0 auto 0.5rem; line-height: 1.6; }
+
+.tagline { color: rgba(217,200,184,0.7); font-size: 0.95rem; margin-bottom: 1.5rem; }
+
+.statsRow { display: flex; justify-content: center; gap: 3rem; margin: 1.5rem 0; flex-wrap: wrap; }
+.statItem { text-align: center; animation: fadeInUp 0.8s ease 0.2s both; }
+.statValue { color: #d4af6a; font-size: 1.8rem; margin-bottom: 0.3rem; font-weight: 700; }
+.statLabel { color: rgba(217,200,184,0.7); font-size: 0.9rem; }
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+.separator { width: 60px; height: 2px; background: linear-gradient(90deg, transparent, #d4af6a, transparent); margin: 2rem auto; }
+
+/* Day Tabs */
+.tabsContainer { margin-bottom: 2rem; }
+.tabs { display: flex; gap: 0.8rem; justify-content: center; flex-wrap: wrap; }
+.tabBtn { 
+  background: transparent; 
+  color: rgba(217,200,184,0.6); 
+  border: 2px solid rgba(212,175,106,0.3); 
+  padding: 0.8rem 1.5rem; 
+  border-radius: 8px; 
+  text-transform: uppercase; 
+  font-size: 0.8rem; 
+  cursor: pointer; 
+  transition: all 0.3s ease; 
+  font-weight: 600; 
+  letter-spacing: 0.05em;
+}
+.tabBtn:hover { 
+  border-color: #d4af6a; 
+  color: #d4af6a; 
+}
+.tabBtn.active { 
+  background: linear-gradient(135deg, #d4af6a 0%, rgba(212,175,106,0.8) 100%); 
+  color: #0a0608; 
+  border-color: #d4af6a; 
+}
+.dayShort { display: inline; }
+.dayFull { display: none; }
+
+@media (max-width: 1024px) {
+  .dayShort { display: none; }
+  .dayFull { display: inline; }
+}
+
+/* Filter Buttons */
+.filterContainer { display: flex; justify-content: center; gap: 0.8rem; margin-bottom: 2rem; flex-wrap: wrap; }
+.filterBtn { 
+  background: transparent; 
+  color: rgba(217,200,184,0.7); 
+  border: 1px solid rgba(212,175,106,0.3); 
+  padding: 0.6rem 1.3rem; 
+  border-radius: 24px; 
+  font-size: 0.85rem; 
+  cursor: pointer; 
+  transition: all 0.3s ease; 
+  font-weight: 500; 
+}
+.filterBtn:hover { 
+  border-color: #d4af6a; 
+  color: #d4af6a; 
+}
+.filterBtn.active { 
+  background: #d4af6a; 
+  color: #0a0608; 
+  border-color: #d4af6a; 
+}
+
+/* Cards Grid */
+.cardsGrid { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
+  gap: 1.5rem; 
+}
+
+.classCard { 
+  background: linear-gradient(135deg, rgba(23,18,23,0.8) 0%, rgba(23,18,23,0.6) 100%); 
+  border: 1px solid rgba(212,175,106,0.2); 
+  border-left: 4px solid var(--card-color);
+  border-radius: 12px; 
+  padding: 1.8rem; 
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); 
+  animation: slideInScale 0.6s ease-out backwards;
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes slideInScale {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.classCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, var(--card-color) 0%, transparent 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.classCard:hover {
+  transform: translateY(-8px);
+  border-color: var(--card-color);
+  box-shadow: 0 15px 40px rgba(212,175,106,0.15), inset 0 0 30px rgba(212,175,106,0.05);
+}
+
+.classCard:hover::before {
+  opacity: 0.08;
+}
+
+.cardHeader { 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: flex-start; 
+  gap: 1rem; 
+  margin-bottom: 1.2rem; 
+}
+
+.timeBlock { 
+  display: inline-block;
+  background: rgba(212,175,106,0.15);
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  border: 1px solid rgba(212,175,106,0.3);
+}
+
+.time { 
+  color: #d4af6a; 
+  font-weight: 700; 
+  font-size: 1.1rem; 
+  letter-spacing: 0.03em;
+}
+
+.levelBadge { 
+  display: inline-block; 
+  background: rgba(212,175,106,0.15); 
+  color: #d4af6a; 
+  padding: 0.4rem 0.9rem; 
+  border-radius: 20px; 
+  font-size: 0.75rem; 
+  text-transform: uppercase; 
+  letter-spacing: 0.05em; 
+  font-weight: 600; 
+  white-space: nowrap; 
+  border: 1px solid rgba(212,175,106,0.3);
+}
+
+.className { 
+  color: #f5ede0; 
+  font-size: 1.4rem; 
+  margin: 0 0 1rem; 
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+}
+
+.instructorInfo { margin-bottom: 1.4rem; }
+
+.instructorLabel { 
+  color: rgba(217,200,184,0.6); 
+  font-size: 0.8rem; 
+  text-transform: uppercase; 
+  letter-spacing: 0.05em;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.instructorName { 
+  color: rgba(217,200,184,0.85); 
+  font-size: 1rem; 
+  margin: 0; 
+  font-weight: 500;
+}
+
+.enrollLink { 
+  background: transparent; 
+  color: var(--card-color); 
+  border: 1px solid var(--card-color); 
+  padding: 0.7rem 1.5rem; 
+  border-radius: 6px; 
+  cursor: pointer; 
+  font-weight: 600; 
+  font-size: 0.9rem; 
+  transition: all 0.3s ease; 
+  text-decoration: none; 
+  display: inline-block;
+}
+
+.enrollLink:hover { 
+  background: var(--card-color); 
+  color: #0a0608; 
+}
+
+.noClasses { 
+  text-align: center; 
+  padding: 3rem 1rem; 
+  color: rgba(217,200,184,0.6); 
+  font-size: 1rem; 
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 1024px) {
+  .cardsGrid { 
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); 
+    gap: 1.2rem; 
+  }
+  .classCard { 
+    padding: 1.5rem; 
+  }
+}
+
+@media (max-width: 768px) {
+  .section { 
+    padding: 3rem 1rem; 
+  }
+  .cardsGrid { 
+    grid-template-columns: 1fr; 
+    gap: 1rem; 
+  }
+  .tabBtn { 
+    padding: 0.6rem 1rem; 
+    font-size: 0.7rem; 
+  }
+  .tabs { 
+    gap: 0.5rem; 
+  }
+  .filterBtn { 
+    padding: 0.5rem 1rem; 
+    font-size: 0.8rem; 
+  }
+  .classCard { 
+    padding: 1.3rem; 
+  }
+  .className { 
+    font-size: 1.2rem; 
+  }
+}
